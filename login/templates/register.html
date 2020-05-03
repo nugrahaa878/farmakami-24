@@ -1,18 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmakami24 - Register</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/register.css" %}">
+{% endblock style %}
+
+
+{% block content %}
+<div class="container register">
     <div>
-        <h4>Register to Farmakami24</h4>
+        <h2>Register to Farmakami24</h2>
     </div>
-    <div>
+    <div class="register-form">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pilih role
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Admin Apotek</a>
+              <a class="dropdown-item" href="#">Konsumen</a>
+              <a class="dropdown-item" href="#">Kurir</a>
+              <a class="dropdown-item" href="#">CS</a>
+            </div>
+          </div>
+    </div>
+    <div class="other">
         <a href="/login">Login</a>
         <br>
         <a href="/">Welcome</a>
     </div>
-</body>
-</html>
+</div>
+{% endblock content %}
