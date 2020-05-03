@@ -13,13 +13,19 @@
         <h2>Register to Farmakami24</h2>
     </div>
     <div class="register-form">
-        <select id="role-menu" class="btn btn-primary" onchange="selectRole()">
-            <option value="none">Select role</option>
-            <option value="admin">Admin Apotek</option>
-            <option value="konsumen">Konsumen</option>
-            <option value="kurir">Kurir</option>
-            <option value="cs">CS</option>  
-        </select>
+        <div class="dropdown">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select role
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="/register/admin">Admin</a>
+                <a class="dropdown-item" href="/register/konsumen">Konsumen</a>
+                <a class="dropdown-item" href="/register/kurir">Kurir</a>
+                <a class="dropdown-item" href="/register/cs">CS</a>
+            </div>
+        </div>
     </div>
     <div class="other">
         <a href="/login">Login</a>

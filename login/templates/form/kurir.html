@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/login.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container login">
+    <div>
+        <h2>Daftar sebagai kurir</h2>
+    </div>
+    <div>
+        
+    </div>
+    <div class="other">
+        <a href="/register">Register</a>
+        <br>
+        <a href="/">Welcome</a>
+    </div>
+</div>
+{% endblock content %}
