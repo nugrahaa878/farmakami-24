@@ -25,7 +25,7 @@ SECRET_KEY = '08p&*6gnm_+iq@1px$ex0nwdigob0+2ip6+)9mm-dkris96(*b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'farmakami24.herokuapp.com']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'farmakami.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
