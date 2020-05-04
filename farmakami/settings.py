@@ -77,14 +77,21 @@ WSGI_APPLICATION = 'farmakami.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER' : 'postgres',
+        'OPTIONS': {
+            'options': '-c search_path=farmakami'
+        },
+        'PASSWORD' : 'admin123',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
     }
 }
 
 import dj_database_url
 
-DATABASES['default'] = dj_database_url.parse('postgres://qoyxikzsjmmnhp:b5873bc52b0712c04c8e02c06f8a4a1c75e4687f6e1ec939a9d368450796b39f@ec2-52-87-135-240.compute-1.amazonaws.com:5432/da143th79d5lj', conn_max_age=600)
+# DATABASES['default'] = dj_database_url.parse('postgres://ppozzyxxyzxcuz:0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5@ec2-52-71-231-180.compute-1.amazonaws.com:5432/d8q6gp4it0tiin', conn_max_age=600)
 
 PRODUCTION = os.environ.get('DATABASE_URL') != None
 if PRODUCTION:
