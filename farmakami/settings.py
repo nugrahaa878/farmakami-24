@@ -84,7 +84,7 @@ DATABASES = {
 
 import dj_database_url
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'] = dj_database_url.parse('postgres://qoyxikzsjmmnhp:b5873bc52b0712c04c8e02c06f8a4a1c75e4687f6e1ec939a9d368450796b39f@ec2-52-87-135-240.compute-1.amazonaws.com:5432/da143th79d5lj', conn_max_age=600)
 
 PRODUCTION = os.environ.get('DATABASE_URL') != None
 if PRODUCTION:
