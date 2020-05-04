@@ -97,6 +97,8 @@ PRODUCTION = os.environ.get('DATABASE_URL') != None
 if PRODUCTION:
     DEBUG = False
     SECURE_SSL_REDIRECT = True
+    DATABASES['default'] = dj_database_url.parse('postgres://ppozzyxxyzxcuz:0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5@ec2-52-71-231-180.compute-1.amazonaws.com:5432/d8q6gp4it0tiin', conn_max_age=600)
+
 
 
 # Password validation
