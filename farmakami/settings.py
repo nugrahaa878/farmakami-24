@@ -80,13 +80,13 @@ WSGI_APPLICATION = 'farmakami.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER' : 'postgres',
+        'NAME': 'd8q6gp4it0tiin',
+        'USER' : 'ppozzyxxyzxcuz',
         'OPTIONS': {
             'options': '-c search_path=farmakami'
         },
-        'PASSWORD' : 'admin123',
-        'HOST' : 'localhost',
+        'PASSWORD' : '0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5',
+        'HOST' : 'ec2-52-71-231-180.compute-1.amazonaws.com',
         'PORT' : '5432',
     }
 }
@@ -99,8 +99,7 @@ PRODUCTION = os.environ.get('DATABASE_URL') != None
 if PRODUCTION:
     DEBUG = False
     SECURE_SSL_REDIRECT = True
-    DATABASES['default'] = dj_database_url.parse('postgres://ppozzyxxyzxcuz:0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5@ec2-52-71-231-180.compute-1.amazonaws.com:5432/d8q6gp4it0tiin', conn_max_age=600)
-
+    
 
 
 # Password validation
