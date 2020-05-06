@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/create_apotek.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-apotek">
+    <div>
+        <h2>FORM CREATE PRODUK APOTEK</h2>
+    </div>
+    <div class="buat-produk-apotek-form">
+        <form>
+            <div class="form-group">
+                <label for="alamatApotek">ID Produk</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pilih
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">A102</a>
+                        <a class="dropdown-item" href="#">A103</a>
+                        <a class="dropdown-item" href="#">A104</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamatApotek">ID Apotek</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pilih
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Apotek-1</a>
+                        <a class="dropdown-item" href="#">Apotek-2</a>
+                        <a class="dropdown-item" href="#">Apotek-3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hargaJual">Harga Jual</label>
+                <input type="text" class="form-control" id="hargaJual">
+            </div>
+            <div class="form-group">
+                <label for="satuanPenjualan">Satuan Penjualan</label>
+                <input type="text" class="form-control" id="satuanPenjualan">
+            </div>
+            <div class="form-group">
+                <label for="stok">Stok</label>
+                <input type="text" class="form-control" id="stok">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="other">
+
+    </div>
+</div>
+{% endblock content %}

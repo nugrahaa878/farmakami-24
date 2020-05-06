@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/create_apotek.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-apotek">
+    <div style="margin-bottom: 50px;">
+        <h2>Daftar Produk Apotek</h2>
+    </div>
+    <div class="table-apotek"">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID Produk</th>
+                    <th scope="col">ID Apotek</th>
+                    <th scope="col">Harga Jual</th>
+                    <th scope="col">Satuan Penjualan</th>
+                    <th scope="col">Stok</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>10000</td>
+                    <td>tablet</td>
+                    <td>5</td>
+                    <td>
+                        <div>
+                            <a href="/produkapotek/update"><button class="btn btn-primary" style="margin-bottom: 5px;">Update</button></a>
+                            <br>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="other">
+
+    </div>
+</div>
+{% endblock content %}
