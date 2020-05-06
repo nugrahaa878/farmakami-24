@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/create_apotek.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-apotek">
+    <div style="margin-bottom: 50px;">
+        <h2>Update Apotek</h2>
+    </div>
+    <div class="update-apotek"">
+    <form>
+        <div class=" form-group">
+            <label for="idApotek">ID Apotek</label>
+            <input type="text" class="form-control" id="namaApotek" value="KIMFAR" disabled>
+        </div>
+        <div class=" form-group">
+            <label for="namaApotek">Nama Apotek</label>
+            <input type="text" class="form-control" id="namaApotek" value="KIMFAR">
+        </div>
+        <div class=" form-group">
+            <label for="namaApotek">Nama Apotek</label>
+            <input type="text" class="form-control" id="namaApotek" value="Kimia Farmasi">
+        </div>
+        <div class="form-group">
+            <label for="alamatApotek">Alamat Apotek</label>
+            <input type="text" class="form-control" id="alamatApotek" value="Jl. Sucipto No. 9">
+        </div>
+        <div class="form-group">
+            <label for="nomorTeleponApotek">Nomor Telepon Apotek</label>
+            <input type="text" class="form-control" id="nomorTeleponApotek" value="+62 876 2323 2323">
+        </div>
+        <div class="form-group">
+            <label for="namaPenyelenggara">Nama Penyelenggara</label>
+            <input type="text" class="form-control" id="namaPenyelenggara" value="Ahmad Darwin">
+        </div>
+        <div class="form-group">
+            <label for="noSIAPenyelenggara">No SIA Penyelenggara</label>
+            <input type="text" class="form-control" id="noSIAPenyelenggara" value="838787 236">
+        </div>
+        <div class="form-group">
+            <label for="emailPenyelenggara">Email Penyelenggara</label>
+            <input type="text" class="form-control" id="emailPenyelenggara" value="ahmad @email. com">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+<div class="other">
+
+</div>
+</div>
+{% endblock content %}

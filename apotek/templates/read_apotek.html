@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/create_apotek.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-apotek">
+    <div style="margin-bottom: 50px;">
+        <h2>Daftar Apotek yang ada</h2>
+    </div>
+    <div class="table-apotek"">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID Apotek</th>
+                    <th scope="col">Nama Apotek</th>
+                    <th scope="col">Alamat Apotek</th>
+                    <th scope="col">No Telp Apotek</th>
+                    <th scope="col">Nama Penyelenggara</th>
+                    <th scope="col">No SIA Penyelenggara</th>
+                    <th scope="col">Email Penyelenggara</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">KIMFAR</th>
+                    <td>Kimia Farmasi</td>
+                    <td>Jl.
+                        Sucipto
+                        No. 9</td>
+                    <td>+62 876
+                        2323
+                        2323
+                    </td>
+                    <td>Ahmad
+                        Darwin</td>
+                    <td>838787
+                        236</td>
+                    <td>ahmad
+                        @email.
+                        com</td>
+                    <td>
+                        <div>
+                            <button class="btn btn-primary" style="margin-bottom: 5px;">Update</button>
+                            <br>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="other">
+
+    </div>
+</div>
+{% endblock content %}
