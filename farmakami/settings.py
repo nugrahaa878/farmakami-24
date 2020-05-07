@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'login',
     'apotek',
     'produkapotek',
+    'transaksipembelian',
+    'profilpengguna'
 ]
 
 MIDDLEWARE = [

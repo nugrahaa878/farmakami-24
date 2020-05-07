@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/transaksi_pembelian.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-transaksi-pembelian">
+
+    <div style="margin-bottom: 50px;">
+        <h2>Daftar Transaksi Pembelian</h2>
+    </div>
+    <div class="table-transaksi-pembelian">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID Transaksi</th>
+                    <th scope="col">Waktu Pembelian</th>
+                    <th scope="col">Total Pembayaran</th>
+                    <th scope="col">ID Konsumen</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2020-02-04 12:29:38</td>
+                    <td>26000</td>
+                    <td>61538</td>
+                    <td>
+                        <div>
+                            <a href="/transaksipembelian/update_transaksi_pembelian"><button class="btn btn-primary" style="margin-bottom: 5px;">Update</button></a>
+                            <br>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>2020-02-13 7:55:18</td>
+                    <td>196500</td>
+                    <td>17176</td>
+                    <td>
+                        <div>
+                            <a href="/transaksipembelian/update_transaksi_pembelian"><button class="btn btn-primary" style="margin-bottom: 5px;">Update</button></a>
+                            <br>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>2020-01-05 3:33:04</td>
+                    <td>135000</td>
+                    <td>54566</td>
+                    <td>
+                        <div>
+                            <a href="/transaksipembelian/update_transaksi_pembelian"><button class="btn btn-primary" style="margin-bottom: 5px;">Update</button></a>
+                            <br>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="other">
+
+    </div>
+
+</div>
+{% endblock content %}

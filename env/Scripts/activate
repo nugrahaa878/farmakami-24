@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Project\farmakami\farmakami\env"
+VIRTUAL_ENV="F:\Basis Data\TK4\farmakami-24\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

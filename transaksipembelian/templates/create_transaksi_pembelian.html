@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/apotek/transaksi_pembelian.css" %}">
+{% endblock style %}
+
+{% block content %}
+<div class="container buat-transaksi-pembelian">
+
+	<div style="margin-bottom: 50px;">
+		<h2>FORM TRANSAKSI PEMBELIAN</h2>
+	</div>
+
+	<div class="buat-transaksi-pembelian-form">
+	    <form>
+	        <div class="form-group">
+	            <label for="idKonsumen">ID Konsumen:</label>
+	            <div class="dropdown">
+	                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+	                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                    Pilih
+	                </button>
+	                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	                    <a class="dropdown-item" href="#">61538</a>
+				        <a class="dropdown-item" href="#">17176</a>
+				        <a class="dropdown-item" href="#">54566</a>
+				        <a class="dropdown-item" href="#">56226</a>
+				        <a class="dropdown-item" href="#">42543</a>
+				        <a class="dropdown-item" href="#">84658</a>
+				        <a class="dropdown-item" href="#">49385</a>
+	                </div>
+	            </div>
+	        </div>
+
+	        <button type="submit" class="btn btn-primary">Submit</button>
+	    </form>
+    </div>
+    <div class="other">
+			
+    </div>
+
+</div>
+{% endblock content %}
