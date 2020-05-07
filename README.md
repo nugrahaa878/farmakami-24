@@ -4,9 +4,9 @@ Project for Database System in Faculty of Computer Science Universitas Indonesia
 
 ## Group 7 Member :
 - Ari Angga Nugraha
-- Alia
-- Habib
-- Naufal
+- Alia Junisar Shafira
+- Habibullah Akbar
+- Muhammad Naufal R.
 
 ## Installation
 
