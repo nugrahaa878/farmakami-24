@@ -3,23 +3,23 @@
 
 {% block style %}
 <link rel="stylesheet" href="{% static "vendor/bootstrap/bootstrap.css" %}">
-<link rel="stylesheet" href="{% static "css/apotek/transaksi_pembelian.css" %}">
+<link rel="stylesheet" href="{% static "css/transaksi_pembelian/buat_transaksi_pembelian.css" %}">
 {% endblock style %}
 
 {% block content %}
 <div class="container buat-transaksi-pembelian">
 
-	<div style="margin-bottom: 50px;">
+	<div>
 		<h2>FORM TRANSAKSI PEMBELIAN</h2>
 	</div>
 
-	<div class="register-form">
+	<div class="buat-transaksi-pembelian-form">
 	    <form>
 	        <div class="form-group">
 	            <label for="idKonsumen">ID Konsumen:</label>
 	            <div class="dropdown">
 	                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-	                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	                    Pilih
 	                </button>
 	                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

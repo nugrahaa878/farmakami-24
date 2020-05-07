@@ -1,4 +1,4 @@
-#!d:\project\farmakami\farmakami\env\scripts\python.exe
+#!f:\basis data\tk4\farmakami-24\env\scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":
