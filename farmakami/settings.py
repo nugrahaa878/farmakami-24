@@ -80,15 +80,28 @@ WSGI_APPLICATION = 'farmakami.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # ONLINE DATABASE (HEROKU)
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'd8q6gp4it0tiin',
+    #     'USER' : 'ppozzyxxyzxcuz',
+    #     'OPTIONS': {
+    #         'options': '-c search_path=farmakami'
+    #     },
+    #     'PASSWORD' : '0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5',
+    #     'HOST' : 'ec2-52-71-231-180.compute-1.amazonaws.com',
+    #     'PORT' : '5432',
+    # }
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd8q6gp4it0tiin',
-        'USER' : 'ppozzyxxyzxcuz',
+        'NAME': 'postgres',
+        'USER' : 'postgres',
         'OPTIONS': {
             'options': '-c search_path=farmakami'
         },
-        'PASSWORD' : '0423feaeb213d8e952494244f44cc8fce2aba7ff95e3a282ef88beea2ec5bfa5',
-        'HOST' : 'ec2-52-71-231-180.compute-1.amazonaws.com',
+        'PASSWORD' : 'admin123',
+        'HOST' : 'localhost',
         'PORT' : '5432',
     }
 }
