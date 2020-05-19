@@ -1,4 +1,4 @@
-# FarmaKami - Yoy=ur Medicine Solution
+# FarmaKami - Your Medicine Solution
 
 *Final project for Database System in Faculty of Computer Science Universitas Indonesia*
 
