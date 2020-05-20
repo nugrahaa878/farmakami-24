@@ -1,6 +1,9 @@
-# FarmaKami
+# FarmaKami - Your Medicine Solution
 
-Project for Database System in Faculty of Computer Science Universitas Indonesia
+*Final project for Database System in Faculty of Computer Science Universitas Indonesia*
+
+*Link to website :*
+https://farmakami24.herokuapp.com/
 
 ## Group 7 Member :
 - Ari Angga Nugraha
@@ -8,24 +11,8 @@ Project for Database System in Faculty of Computer Science Universitas Indonesia
 - Habibullah Akbar
 - Muhammad Naufal R.
 
-## Installation
+## Branch Status
+[![pipeline status](https://gitlab.com/nugrahaa/farmakami-24/badges/master/pipeline.svg)](https://gitlab.com/nugrahaa/farmakami-24/-/commits/master)
 
-```django
-coming soon
-```
-
-## Usage
-
-```django
-coming soon
-```
-
-## Contributing
-```django
-coming soon
-```
-
-## License
-```django
-coming soon
-```
+## Description
+Farmakami adalah website yang membantu apotek, konsumen dan kurir dalam melakukan transaksi dan manajemen sebuah apotek
